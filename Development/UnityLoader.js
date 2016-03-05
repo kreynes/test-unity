@@ -3440,8 +3440,8 @@ Module.expectedDataFileDownloads++;
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
-      var REMOTE_PACKAGE_SIZE = 8011422;
-      var PACKAGE_UUID = '601d992d-0369-4f28-a657-8455dc69470a';
+      var REMOTE_PACKAGE_SIZE = 7999116;
+      var PACKAGE_UUID = 'fd2b22ad-c275-48b3-a5e1-a2e847475d17';
     
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -3545,12 +3545,12 @@ Module['FS_createPath']('/Managed/mono', '2.0', true, true);
       },
     };
 
-      new DataRequest(0, 5077391, 0, 0).open('GET', '/data.unity3d');
-    new DataRequest(5077391, 5077410, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(5077410, 5077896, 0, 0).open('GET', '/preserved_derived_types.xml');
-    new DataRequest(5077896, 6487104, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
-    new DataRequest(6487104, 7983796, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(7983796, 8011422, 0, 0).open('GET', '/Managed/mono/2.0/machine.config');
+      new DataRequest(0, 5064649, 0, 0).open('GET', '/data.unity3d');
+    new DataRequest(5064649, 5064668, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(5064668, 5065150, 0, 0).open('GET', '/preserved_derived_types.xml');
+    new DataRequest(5065150, 6474798, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
+    new DataRequest(6474798, 7971490, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(7971490, 7999116, 0, 0).open('GET', '/Managed/mono/2.0/machine.config');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;

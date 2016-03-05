@@ -3430,8 +3430,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'TestGithub.data';
-    var REMOTE_PACKAGE_BASE = 'TestGithub.data';
+    var PACKAGE_NAME = 'test-unity.data';
+    var REMOTE_PACKAGE_BASE = 'test-unity.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -3441,7 +3441,7 @@ Module.expectedDataFileDownloads++;
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
       var REMOTE_PACKAGE_SIZE = 8011422;
-      var PACKAGE_UUID = 'd4386dfd-6817-4047-a6de-29d074be7744';
+      var PACKAGE_UUID = '601d992d-0369-4f28-a657-8455dc69470a';
     
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -3566,10 +3566,10 @@ Module['FS_createPath']('/Managed/mono', '2.0', true, true);
           DataRequest.prototype.requests["/Il2CppData/Metadata/global-metadata.dat"].onload();
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Managed/mono/2.0/machine.config"].onload();
-          Module['removeRunDependency']('datafile_TestGithub.data');
+          Module['removeRunDependency']('datafile_test-unity.data');
 
     };
-    Module['addRunDependency']('datafile_TestGithub.data');
+    Module['addRunDependency']('datafile_test-unity.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
